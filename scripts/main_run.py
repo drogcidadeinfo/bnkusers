@@ -37,7 +37,6 @@ chrome_options.add_experimental_option("prefs", prefs)
 driver = webdriver.Chrome(options=chrome_options)
 
 # ───── Helpers ─────
-
 def authorize_gspread():
     creds_dict = json.loads(GGL_CREDENTIALS)
     creds = Credentials.from_service_account_info(creds_dict, scopes=GOOGLE_SCOPE)
@@ -144,7 +143,6 @@ def next_page(driver):
         return False
 
 # ───── Main ─────
-
 def main():
     try:
         logging.info("Opening the URL and logging in")
