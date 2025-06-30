@@ -26,5 +26,8 @@ jobs:
     - name: Run script
       env:
         GGL_CREDENTIALS: ${{ secrets.GGL_CREDENTIALS }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        SHEET_ID: ${{ secrets.SHEET_ID }}
       run: |
         python scripts/main_run.py
