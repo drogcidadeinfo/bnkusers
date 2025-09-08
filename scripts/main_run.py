@@ -155,7 +155,7 @@ def main():
         driver.switch_to.active_element.send_keys(Keys.TAB)
         driver.switch_to.active_element.send_keys(Keys.TAB)
         driver.switch_to.active_element.send_keys(Keys.ENTER)    
-        time.sleep(5)
+        time.sleep(10)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/form/fieldset/div[7]/div[2]/input"))).click()
 
         WebDriverWait(driver, 10).until(lambda d: d.execute_script("return document.readyState") == "complete")
