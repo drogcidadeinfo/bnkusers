@@ -164,7 +164,7 @@ def main():
         # WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/form/fieldset/div[7]/div[2]/input"))).click()
 
         WebDriverWait(driver, 10).until(lambda d: d.execute_script("return document.readyState") == "complete")
-        time.sleep(2)
+        time.sleep(5)
 
         page = 1
         while True:
